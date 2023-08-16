@@ -1,7 +1,32 @@
-# Getting Started with Create React App
+# Kasa 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projet 8 du parcours "Intégrateur Web" chez OpenClassrooms.
+L'objectif est de concevoir une application web de location immobilière avec React.
 
+![screenshot logo](./public/logo.png)
+
+## React 
+
+Ce projet a été créé avec Create React App.
+
+## Mission 
+- **Refonte totale du site de Kasa **
+
+## Objectifs 
+- ** Développer l'ensemble de l'application **
+- ** Utiliser les composants React **
+- ** Créer les routes avec React Router **
+- ** Utiliser Sass pour le design **
+- ** Site responsive ** 
+
+## Technologies 
+- ** Javascript**
+- ** React **
+- ** React Router **
+- ** Sass **
+
+
+# React 
 ## Available Scripts
 
 In the project directory, you can run:
