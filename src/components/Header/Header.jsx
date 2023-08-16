@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/images/logo.svg'
 import './Header.scss'
 
 function Header() {
     return (
        <header>
-        <Link to="/">
+        <NavLink to="/">
             <img src={Logo} alt="Logo de Kasa" />
-        </Link>
+        </NavLink>
         
         <nav className='navbar'>
                 <NavLink to="/">
