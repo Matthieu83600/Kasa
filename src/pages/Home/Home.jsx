@@ -1,6 +1,12 @@
+import React from 'react'
+import Banner from '../../components/Banner/Banner'
+
 function Home() {
     return (
-        <div> Accueil </div>
+        <main>  
+            < Banner page="home" content="Chez vous, partout et ailleurs" />
+        </main>
+         
     )
 }
 
