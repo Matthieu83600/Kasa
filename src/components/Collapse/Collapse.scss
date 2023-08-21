@@ -35,6 +35,6 @@
                                   }
   }
 
-  .collapse-item .collapse-content, .collapse-item .chevron-up {transition: all 0.5s ease;}
+  .collapse-item .collapse-content, .collapse-item .chevron-up {transition: all 0.8s ease-in-out;}
 
   .collapse-item.open .chevron-up {transform: rotate(-180deg);}
