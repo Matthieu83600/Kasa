@@ -3,15 +3,18 @@
 .logements-tag-container { margin-top: 25px;
                            width: 50%;
 
-                           .tag-container { display: flex;
+                           .tag-container { align-items: center; 
+                                            display: flex;
                                             gap : 20px;
 
-                                            .tag-item { background-color: $main-color;
+                                            .tag-item { 
+                                              background-color: $main-color;
                                                         border-radius: 10px;
                                                         color: $text_white;
                                                         font-size: 14px;
                                                         font-weight: 500;
-                                                        padding: 2.5px 30px;
+                                                        padding: 5px 30px;
+                                                        align-items: center;
                                                       }
                                           }
 }
