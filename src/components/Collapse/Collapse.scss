@@ -1,0 +1,40 @@
+@import '../../styles/Style.scss';
+
+.collapse-item { align-items: center;
+                 color: $text_white;
+                 display: flex;
+                 flex-direction: column;
+                 margin: 40px 0px;
+                 width: 100%;
+
+                 .collapse-header { align-items: center;
+                                    background-color: $main-color;
+                                    border-radius: 5px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 10px 20px 10px 10px;
+                                    width: 70%;
+
+                                    h2 { font-size: 24px;
+                                         font-weight: 500;
+                                       }
+
+                                    .collapse-button { background-color: $main-color;
+                                                       border: none;
+                                                     }
+                                  }
+
+                .collapse-content { background-color: $collapse-color;
+                                    color: $main-color;
+                                    display: none;
+                                    font-size: 18px;
+                                    padding: 20px;
+                                    width: 70%;
+
+                                    &.open {display: block;}
+                                  }
+  }
+
+  .collapse-item .collapse-content, .collapse-item .chevron-up {transition: all 0.5s ease;}
+
+  .collapse-item.open .chevron-up {transform: rotate(-180deg);}
