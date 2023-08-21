@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
+import './Tag.scss'
 
 function Tag() {
     const { id } = useParams()

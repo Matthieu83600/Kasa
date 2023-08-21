@@ -33,7 +33,8 @@ function LogementsCard() {
                         </div>
                         < Rating />
                     </div>
-                    <div className='logementscard-collapse-container'>
+                </div>
+                <div className='logementscard-collapse-container'>
                         < Collapse 
                             title='Description'
                             content={location.description}
@@ -42,7 +43,6 @@ function LogementsCard() {
                             title='Équipements'
                             // content 
                         />
-                    </div>
                 </div>
             </section>
         )

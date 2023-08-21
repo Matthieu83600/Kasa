@@ -1,0 +1,17 @@
+@import '../../styles/Style.scss';
+
+.logements-tag-container { margin-top: 25px;
+                           width: 50%;
+
+                           .tag-container { display: flex;
+                                            gap : 20px;
+
+                                            .tag-item { background-color: $main-color;
+                                                        border-radius: 10px;
+                                                        color: $text_white;
+                                                        font-size: 14px;
+                                                        font-weight: 500;
+                                                        padding: 2.5px 30px;
+                                                      }
+                                          }
+}
