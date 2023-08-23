@@ -41,7 +41,13 @@ function LogementsCard() {
                         />
                         < Collapse
                             title='Équipements'
-                            // content 
+                            content= {
+                                <div>
+                                    {location.equipments.map((equipments, index) => (
+                                        <p key={index}>{equipments}</p>       
+                                    ))}
+                                </div>
+                                } 
                         />
                 </div>
             </section>

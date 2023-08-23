@@ -9,11 +9,12 @@
 
                  .collapse-header { align-items: center;
                                     background-color: $main-color;
-                                    border-radius: 5px;
+                                    border-radius: 10px;
                                     display: flex;
                                     justify-content: space-between;
                                     padding: 10px 20px 10px 10px;
                                     width: 100%;
+                                    z-index: 1;
 
                                     h2 { font-size: 24px;
                                          font-weight: 500;
@@ -25,16 +26,18 @@
                                   }
 
                 .collapse-content { background-color: $collapse-color;
+                                    border-radius: 0 0 10px 10px;
                                     color: $main-color;
                                     display: none;
                                     font-size: 18px;
                                     padding: 20px;
                                     width: 100%;
+                                    z-index: 0;
 
                                     &.open {display: block;}
                                   }
   }
 
-  .collapse-item .collapse-content, .collapse-item .chevron-up {transition: all 0.8s ease-in-out;}
+  .collapse-item .collapse-content, .collapse-item .chevron-up {transition: all 0.3s ease-in;}
 
   .collapse-item.open .chevron-up {transform: rotate(-180deg);}
