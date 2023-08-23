@@ -34,6 +34,10 @@
                                     width: 100%;
                                     z-index: 0;
 
+                                    & div {
+                                            ul > li {list-style: none;}
+                                          }
+
                                     &.open {display: block;}
                                   }
   }

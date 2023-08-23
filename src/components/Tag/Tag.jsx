@@ -1,7 +1,10 @@
+// Importation des éléments dont on a besoin
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
 import './Tag.scss'
 
+// Création d'une fonction composant Tag
 function Tag() {
     const { id } = useParams()
 

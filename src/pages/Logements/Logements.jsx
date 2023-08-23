@@ -1,3 +1,4 @@
+// Importation des éléments dont on a besoin 
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
@@ -8,6 +9,7 @@ import Tag from '../../components/Tag/Tag'
 import Rating from '../../components/Rating/Rating'
 import './Logements.scss'
 
+// Création d'une fonction composant permettant d'afficher la page Logements de chaque location
 function LogementsCard() {
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)
@@ -42,11 +44,11 @@ function LogementsCard() {
                         < Collapse
                             title='Équipements'
                             content= {
-                                <div>
+                                <ul>
                                     {location.equipments.map((equipments, index) => (
-                                        <p key={index}>{equipments}</p>       
+                                        <li key={index}>{equipments}</li>       
                                     ))}
-                                </div>
+                                </ul>
                                 } 
                         />
                 </div>

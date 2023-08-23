@@ -1,9 +1,15 @@
+// Importation des éléments dont on a besoin 
+import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
 
+// Création d'une fonction composant qui affiche la page About
 function About() {
     return (
         <main>
+            {
+                // Récupération des composants Banner et Collapse
+            }
             < Banner page="about" />
             < Collapse 
                 title="Fiabilité"
@@ -30,6 +36,7 @@ function About() {
                          locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également 
                          des ateliers sur la sécurité domestique pour nos hôtes."
             />
+            
         </main>
     )
 }

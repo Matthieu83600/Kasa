@@ -1,9 +1,15 @@
+// Imporation des éléments dont on a besoin 
+import React from 'react'
 import { useState } from 'react'
 import ArrowTop from '../../assets/images/ArrowTop.png'
 import './Collapse.scss'
 
+// Création de la fonction composant Collapse en utilisant des props
 function Collapse({ title, content }) {
+
+    // Indication que la Collapse est fermée de base avec le state
     const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className={`collapse-item ${isOpen ? "open" : ""}`}>
             <div className="collapse-header">
@@ -13,7 +19,7 @@ function Collapse({ title, content }) {
                 </button>
             </div>
             <div className={`collapse-content ${isOpen ? "open" : ""}`}>
-                <p>{content}</p>
+                <div>{content}</div>
             </div>
         </div>
     )
