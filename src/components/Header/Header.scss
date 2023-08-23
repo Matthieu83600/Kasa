@@ -1,29 +1,20 @@
 @import '../../styles/Style.scss';
 
-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px auto;
-    max-width: 1240px;
-
-    img {
-        align-items: center;
-        height: 68px;
-        width: 210px;
-    }
-
-    .navbar {
-        align-items: center;
-        display: flex;
-        gap: 50px;
-
-        a {
-            color: $main-color;
-            font-size: 24px;
-            font-weight: 500;
-            text-decoration: none;
-
-            &.active {border-bottom: solid 2px $main-color;}
+.header { display: flex;
+          justify-content: space-between;
+          margin: 30px auto;
+          max-width: 1240px;
+          &__image { align-items: center;
+                     height: 68px;
+                     width: 210px;
+                   }
+          &__navbar { align-items: center;
+                      display: flex;
+                      gap: 50px;
+                      a { color: $main-color;
+                          font-size: 24px;
+                          font-weight: 500;
+                          &.active {border-bottom: solid 2px $main-color;}
+                        }
+                    }
         }
-    }
-}

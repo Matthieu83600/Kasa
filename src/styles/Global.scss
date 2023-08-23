@@ -9,3 +9,9 @@
   }
 
 body {width: 100%;}
+
+// Suppression des puces des listes
+ul > li {list-style: none;}
+
+// Suppression des textes liens soulignés
+a {text-decoration: none;}

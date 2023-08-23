@@ -8,12 +8,12 @@ import './Gallery.scss'
 function LogementsList() {
 
     return (
-        <section className='logements-container'>
-            <div className='logements-list'>
+        <section className='logements'>
+            <div className='logements__list'>
                 {DataLogements.map((location) => (
-                    <div key={location.id} className='logements-item'>
-                        <Link to={"/logements/" + location.id} className='logements-card'>
-                            <img src={location.cover} alt={location.title} className='logements-cover'/>
+                    <div key={location.id} className='logements__list-item'>
+                        <Link to={"/logements/" + location.id} className='logements__list-item-card'>
+                            <img src={location.cover} alt={location.title} className=' logements-cover'/>
                             <h2 className='logements-title'>{location.title}</h2>
                         </Link>
                     </div>

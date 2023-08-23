@@ -8,12 +8,12 @@ import './Header.scss'
 function Header() {
 
     return (
-       <header>
+       <header className='header'>
         <NavLink to="/">
-            <img src={Logo} alt="Logo de Kasa" />
+            <img src={Logo} alt="Logo de Kasa" className='header__image' />
         </NavLink>
         
-        <nav className='navbar'>
+        <nav className='header__navbar'>
                 <NavLink to="/">
                     Accueil
                 </NavLink>

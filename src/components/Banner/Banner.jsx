@@ -13,9 +13,9 @@ function Banner({ page, content }) {
     const imageSrc = page === "home" ? BannerImgHome : BannerImgAbout
    
     return (
-        <div className='banner-container'>
-            <img src={imageSrc} alt="Paysage" />
-            <div className='banner-content'>
+        <div className='banner'>
+            <img src={imageSrc} alt="Paysage" className='banner__image'/>
+            <div className='banner__content'>
                 <p>{content}</p>
             </div>
         </div>

@@ -1,46 +1,37 @@
 @import '../../styles/Style.scss';
 
-.logements-container { background-color: $gallery-color;
-                       border-radius: 25px; 
-                       margin: 50px auto;
-                       max-width: 1240px;
-                       padding-bottom: 10px;
-                       padding-top: 10px;
-
-                       .logements-list { display: grid;
-                                         gap: 50px;
-                                         grid-template-columns: repeat(3, 1fr);
-                                         margin: auto;
-                                         padding: 50px;
-                                         width: 100%;
-
-                                         .logements-item { position: relative;
-                                                           
-                                                           .logements-card { border-radius: 10px; 
-                                                                             color: $text-white;
-                                                                             display: block;
-                                                                             height: 340px;
-                                                                             max-width: 340px;
-                                                                             text-decoration: none;
-                                                                             
-
-                                                                             .logements-cover { border-radius: 10px;
-                                                                                                filter: brightness(0.70);
-                                                                                                height: 340px;
-                                                                                                object-fit: cover;
-                                                                                                width: 100%;
-                                                                                              }
-
-                                                                             .logements-title { font-size: 18px;
-                                                                                                position: absolute;
-                                                                                                bottom: 15px;
-                                                                                                left: 15px;
-                                                                                                width: 90%;
-                                                                                              }
-                                                           } 
-                                        }
-
-
+.logements { background-color: $gallery-color;
+             border-radius: 25px; 
+             margin: 50px auto;
+             max-width: 1240px;
+             padding-bottom: 10px;
+             padding-top: 10px;
+             &__list { display: grid;
+                       gap: 50px;
+                       grid-template-columns: repeat(3, 1fr);
+                       margin: auto;
+                       padding: 50px;
+                       width: 100%;
+                       &-item { position: relative;                         
+                                &-card { border-radius: 10px; 
+                                         color: $text-white;
+                                         display: block;
+                                         height: 340px;
+                                         max-width: 340px;
+                                         text-decoration: none;                                                                         
+                                         .logements-cover { border-radius: 10px;
+                                                             filter: brightness(0.70);
+                                                             height: 340px;
+                                                             object-fit: cover;
+                                                             width: 100%;
+                                                           }
+                                         .logements-title { font-size: 18px;
+                                                            position: absolute;
+                                                              bottom: 15px;
+                                                              left: 15px;
+                                                            width: 90%;
+                                                          }
+                                       } 
+                                }
                        }
-
-}
+            }

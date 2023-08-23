@@ -11,15 +11,15 @@ function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className={`collapse-item ${isOpen ? "open" : ""}`}>
-            <div className="collapse-header">
+        <div className={`collapse ${isOpen ? "open" : ""}`}>
+            <div className="collapse__header">
                 <h2>{title}</h2>
-                <button className="collapse-toggle-button collapse-button" onClick={() => setIsOpen(!isOpen)}>
+                <button className="collapse__header-button" onClick={() => setIsOpen(!isOpen)}>
                 <img src={ArrowTop} alt="Chevron" className={`chevron-up ${isOpen ? "open" : ""}`}/>
                 </button>
             </div>
-            <div className={`collapse-content ${isOpen ? "open" : ""}`}>
-                <div>{content}</div>
+            <div className={`collapse__content ${isOpen ? "open" : ""}`}>
+                {content}
             </div>
         </div>
     )
