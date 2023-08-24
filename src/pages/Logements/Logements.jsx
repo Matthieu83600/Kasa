@@ -18,7 +18,7 @@ function LogementsCard() {
         return < Error />
     } else {
         return (
-            <section className='logementscard-container'> 
+            <main className='logementscard-container'> 
                 < Carousel />
                 <div className='logementscard-information-container'>
                     <div className='logementscard-information'>
@@ -36,7 +36,7 @@ function LogementsCard() {
                         < Rating />
                     </div>
                 </div>
-                <div className='logementscard-collapse-container'>
+                <section className='logementscard-collapse-container'>
                         < Collapse 
                             title='Description'
                             content={location.description}
@@ -51,8 +51,8 @@ function LogementsCard() {
                                 </ul>
                                 } 
                         />
-                </div>
-            </section>
+                </section>
+            </main>
         )
     }
 }

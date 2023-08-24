@@ -1,0 +1,32 @@
+@import '../../styles/Style.scss';
+
+.carousel { margin-bottom: 30px;
+            max-width: 1240px;
+            &__container { align-items: center;
+                           display: flex;
+                           height: 415px;
+                           justify-content: center; 
+                           position: relative;
+                           width: 100%;
+                           &-arrowleft { position: absolute;
+                                            left: 1%;
+                                       }
+                           &-arrowright { position: absolute;
+                                            right: 1%;  
+                                        }  
+                           .arrow:hover {cursor: pointer;}
+                           &-indicator { color: $text_white;
+                                         font-size: 18px;
+                                         font-weight: 500;
+                                         position: absolute;
+                                            bottom: 7%;
+                                       }   
+                           &-slide { border-radius: 20px; 
+                                     filter: brightness(0.7);   
+                                     height: 100%;
+                                     object-fit: cover;
+                                     width: 100%;  
+                                   }
+                            &-slidehidden { display : none;}                           
+                         }
+          }

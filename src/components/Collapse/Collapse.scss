@@ -24,18 +24,18 @@
                          border-radius: 0 0 10px 10px;
                          color: $main-color;
                          font-size: 18px;
-                         margin: -6px;
-                         max-height: 0;
-                         opacity: 0;
+                         margin-top: -40px;
+                         max-height: 0; 
+                         overflow: hidden;                    
                          padding: 20px;
-                         transition: max-height 0.7s ease-in-out, opacity 0.7s ease-in-out;
+                         transition: max-height 0.4s linear, margin-top 0.4s linear;
                          width: 100%;
                          z-index: -1;
-                         &.open { max-height: 500px;
-                                  opacity: 1;
-                                  transition: max-height 0.7s ease-in-out, opacity 0.7s ease-in-out
+                         &.open { margin-top: -6px;
+                                  max-height: 400px;
+                                  transition: max-height 0.4s linear, margin-top 0.4s linear;
                                 }
                        }
             }
-.collapse .chevron-up {transition: all 0.5s ease-in-out;}
+.collapse .chevron-up {transition: all 0.4s linear;}
 .collapse.open .chevron-up {transform: rotate(-180deg);}
