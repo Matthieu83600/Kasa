@@ -3,13 +3,13 @@
 .logements { background-color: $gallery-color;
              border-radius: 25px; 
              margin: 50px auto;
-             max-width: 1240px;
              padding-bottom: 10px;
              padding-top: 10px;
+             width: 80%;
              &__list { display: grid;
                        gap: 50px;
                        grid-template-columns: repeat(3, 1fr);
-                       margin: auto;
+                       justify-content: space-around;
                        padding: 50px;
                        width: 100%;
                        &-item { position: relative;                         
@@ -17,7 +17,7 @@
                                          color: $text-white;
                                          display: block;
                                          height: 340px;
-                                         max-width: 340px;
+                                         width: 100%;
                                          text-decoration: none;                                                                         
                                          .logements-cover { border-radius: 10px;
                                                              filter: brightness(0.70);

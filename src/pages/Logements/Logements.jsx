@@ -18,25 +18,25 @@ function LogementsCard() {
         return < Error />
     } else {
         return (
-            <main className='logementscard-container'> 
+            <main className='logementscard'> 
                 < Carousel />
-                <div className='logementscard-information-container'>
-                    <div className='logementscard-information'>
+                <section className='logementscard__container'>
+                    <div className='logementscard__container-informations'>
                         <div>
                             <h2>{location.title}</h2>
                             <p>{location.location}</p>
                         </div>
                         < Tag />
                     </div>
-                    <div className='logementscard-host-container'>
+                    <div className='logementscard__container-host'>
                         <div className='host-id'>
                             <p>{location.host.name}</p>
                             <img src={location.host.picture} alt="Portrait du propriétaire" />
                         </div>
                         < Rating />
                     </div>
-                </div>
-                <section className='logementscard-collapse-container'>
+                </section>
+                <section className='logementscard__collapse'>
                         < Collapse 
                             title='Description'
                             content={location.description}

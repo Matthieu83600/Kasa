@@ -1,53 +1,46 @@
 @import '../../styles/Style.scss';
 
-.logementscard-container { display: flex;
-                           flex-direction: column;
-                           margin: 50px auto;
-                           max-width: 1240px; 
+.logementscard { display: flex;
+                 flex-direction: column;
+                 margin: 50px auto;
+                 width: 80%;
+                 &__container { display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                justify-content: space-between;
+                                width: 100%;
+                                &-informations { h2 { color: $main-color;
+                                                      font-size: 36px;
+                                                      font-weight: 500;
+                                                    } 
+                                                  p { color: $main-color;
+                                                      font-size: 18px;
+                                                      font-weight: 500;
+                                                    }   
+                                               }   
+                                &-host { align-items: flex-end;
+                                         display: flex;
+                                         flex-direction: column;
+                                         .host-id { align-items: center;
+                                                    display: flex;
+                                                    gap: 40px; 
+                                                    margin-right: -50px;
+                                                    p { color: $main-color;
+                                                        font-size: 18px;
+                                                        font-weight: 500;
+                                                        width: 30%;
+                                                      }
+                                                    img { border-radius: 33px;
+                                                          max-height: 74px;
+                                                          max-width: 74px;
+                                                        }  
+                                                  }
+                                       }                                       
+                              }
+                 &__collapse { display: flex; 
+                               gap: 50px; 
+                               width: 100%; 
+                             }                                   
 
-                           .logementscard-information-container { display: flex;
-                                                                  justify-content: space-between;
-                                                                  width: 100%;
+                                                                  
 
-                                                                  .logementscard-information { width: 50%;
-                                                                                               h2 { color: $main-color;
-                                                                                                    font-size: 36px;
-                                                                                                    font-weight: 500;
-                                                                                                  } 
-                                                                                               
-                                                                                               p { color: $main-color;
-                                                                                                   font-size: 18px;
-                                                                                                   font-weight: 500;
-                                                                                                 }   
-
-                                                                  }                                         
-                                                                }
-                           .logementscard-host-container {  align-items: flex-end;
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            width: 50%;
-
-                                                           .host-id { align-items: center;
-                                                                      display: flex;
-                                                                      gap: 20px;
-                                                                      width: 30%;  
-
-                                                                      p { color: $main-color;
-                                                                          font-size: 18px;
-                                                                          font-weight: 500;
-                                                                        }
-
-                                                                      img { border-radius: 33px;
-                                                                            height: 74px;
-                                                                            width: 74px;
-                                                                          }  
-                                                                    } 
-
-                           } 
-
-                           .logementscard-collapse-container { display: flex; 
-                                                               gap: 50px; 
-                                                               width: 100%; 
-                                                             }
-
-}
+                          }

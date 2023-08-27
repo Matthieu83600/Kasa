@@ -1,7 +1,7 @@
 @import '../../styles/Style.scss';
 
 .carousel { margin-bottom: 30px;
-            max-width: 1240px;
+            width: 100%;
             &__container { align-items: center;
                            display: flex;
                            height: 415px;

@@ -1,8 +1,8 @@
 @import '../../styles/Style.scss';
 
 .banner { margin: 50px auto;
-          max-width: 1240px;
           position: relative;
+          width: 80%;
           &__image { aspect-ratio : auto;
                      border-radius: 30px;
                      filter: brightness(0.68);
