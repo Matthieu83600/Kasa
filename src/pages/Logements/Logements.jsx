@@ -7,7 +7,7 @@ import Carousel from '../../components/Carousel/Carousel'
 import Collapse from '../../components/Collapse/Collapse'
 import Tag from '../../components/Tag/Tag'
 import Rating from '../../components/Rating/Rating'
-import './Logements.scss'
+import './_Logements.scss'
 
 // Création d'une fonction composant permettant d'afficher la page Logements de chaque location
 function LogementsCard() {

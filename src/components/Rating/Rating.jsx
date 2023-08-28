@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
 import StarActive from '../../assets/images/StarActive.png'
 import StarInactive from '../../assets/images/StarInactive.png'
-import './Rating.scss'
+import './_Rating.scss'
 
 function Rating() {
     // Récupération des données par rapport à l'ID de la location

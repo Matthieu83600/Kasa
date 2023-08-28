@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
 import ArrowLeft from '../../assets/images/ArrowLeft.png'
 import ArrowRight from '../../assets/images/ArrowRight.png'
-import './Carousel.scss'
+import './_Carousel.scss'
 
 // Création d'une fonction composant Carousel
 function Carousel() {

@@ -2,7 +2,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import DataLogements from '../../datas/logements.json'
-import './Tag.scss'
+import './_Tag.scss'
 
 // Création d'une fonction composant Tag
 function Tag() {

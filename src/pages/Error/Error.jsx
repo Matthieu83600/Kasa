@@ -2,7 +2,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Error404 from '../../assets/images/404.png'
-import './Error.scss'
+import './_Error.scss'
 
 // Création d'une fonction composant pour afficher la page d'erreur
 function Error() {

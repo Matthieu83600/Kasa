@@ -2,7 +2,7 @@
 import React from 'react'
 import BannerImgHome from '../../assets/images/ImageHome.png'
 import BannerImgAbout from '../../assets/images/ImageAbout.png'
-import './Banner.scss'
+import './_Banner.scss'
 
 // Création d'une fonction composant avec des props pour afficher la bannière
 function Banner({ page, content }) {

@@ -1,7 +1,7 @@
 // Importation des éléments dont on a besoin
 import React from 'react'
 import WhiteLogo from '../../assets/images/whiteLogo.png'
-import './Footer.scss'
+import './_Footer.scss'
 
 // Création d'une fonction composant Footer
 function Footer() {

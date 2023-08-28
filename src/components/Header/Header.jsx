@@ -2,7 +2,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/images/logo.svg'
-import './Header.scss'
+import './_Header.scss'
 
 // Création d'une fonction composant Header
 function Header() {

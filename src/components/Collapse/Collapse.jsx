@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import ArrowTop from '../../assets/images/ArrowTop.png'
-import './Collapse.scss'
+import './_Collapse.scss'
 
 // Création de la fonction composant Collapse en utilisant des props
 function Collapse({ title, content }) {
