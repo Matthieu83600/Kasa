@@ -1,58 +1,56 @@
-@import '../../styles/_Style.scss';
-@import '../../styles/Breakpoint.scss';
+@import '../../styles/Style';
+@import '../../styles/Breakpoint';
 
-.collapse { align-items: center;
-            color: $text_white;
-            display: flex;
-            flex-direction: column;
-            margin: 40px auto;
-            width: 65%;
-            @include mobile { margin: 15px auto;
-                              width: 100%;
-                            }
-            &__header { align-items: center;
-                        background-color: $main-color;
-                        border-radius: 10px;
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 10px 20px 10px 10px;
-                        width: 100%;
-                        @include mobile { border-radius: 5px;
-                                          padding: 4px 6px 4px 6px;
-                                        }
-                        & h2 { font-size: 24px;
-                               font-weight: 500;
-                               @include mobile {font-size: 13px;}
-                             }
-                        &-button { background-color: $main-color;
-                                   border: none;
-                                   @include mobile { height: 32px;
-                                                     width: 32px;
-                                                     img { height: 18px;
-                                                           width: 20px;
-                                                         } 
-                                                   }
-                                 }
+.collapse {align-items: center;
+           display: flex;
+           flex-direction: column;
+           margin: 40px auto;
+           width: 65%;
+           @include mobile {margin: 15px auto;
+                            width: 100%;
+                           }
+           &__header {align-items: center;
+                      background-color: $main-color;
+                      border-radius: 10px;
+                      display: flex;
+                      justify-content: space-between;
+                      padding: 10px 20px 10px 10px;
+                      width: 100%;
+                      @include mobile {border-radius: 5px;
+                                       padding: 4px 6px 4px 6px;
+                                      }
+                      & h2 {font-size: 24px;
+                            @include mobile {font-size: 13px;}
+                           }
+                      &-button {background-color: $main-color;
+                                border: none;
+                                @include mobile {height: 32px;
+                                                 width: 32px;
+                                                 img {height: 18px;
+                                                      width: 20px;
+                                                     } 
+                                                }
+                               }
+                     }
+           &__content {background-color: $second-color;
+                       border-radius: 0 0 10px 10px;
+                       color: $main-color;
+                       font-size: 18px;
+                       margin-top: -40px;
+                       max-height: 0; 
+                       overflow: hidden;                    
+                       padding: 20px;
+                       transition: max-height 0.6s ease, margin-top 0.6s linear;
+                       width: 100%;
+                       z-index: -1;
+                       @include mobile {font-size: 12px;
+                                        line-height: 17px;                               
+                                       }
+                       &.open {margin-top: -6px;
+                               max-height: 400px;
+                               transition: max-height 0.6s ease-in, margin-top 0.6s linear;                
+                              }
                       }
-            &__content { background-color: $collapse-color;
-                         border-radius: 0 0 10px 10px;
-                         color: $main-color;
-                         font-size: 18px;
-                         margin-top: -40px;
-                         max-height: 0; 
-                         overflow: hidden;                    
-                         padding: 20px;
-                         transition: max-height 0.4s linear, margin-top 0.4s linear;
-                         width: 100%;
-                         z-index: -1;
-                         @include mobile { font-size: 12px;
-                                           line-height: 17px;                               
-                                         }
-                         &.open { margin-top: -6px;
-                                  max-height: 400px;
-                                  transition: max-height 0.4s linear, margin-top 0.4s linear;                
-                                }
-                       }
             }
-.collapse .chevron-up {transition: all 0.4s linear;}
+.collapse .chevron-up {transition: all 0.5s linear;}
 .collapse.open .chevron-up {transform: rotate(-180deg);}

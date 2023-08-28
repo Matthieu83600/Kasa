@@ -1,9 +1,13 @@
 // Importation des éléments dont on a besoin
 import React from 'react'
+// Importation des hooks
 import { useParams } from 'react-router-dom'
+// Importation des données des locations 
 import DataLogements from '../../datas/logements.json'
+// Importation images
 import StarActive from '../../assets/images/StarActive.png'
 import StarInactive from '../../assets/images/StarInactive.png'
+// Design
 import './_Rating.scss'
 
 function Rating() {
@@ -29,9 +33,11 @@ function Rating() {
     }
 
     return (
+
         <div className='rating'>
             {stars}
         </div>
+        
     )
 }
 

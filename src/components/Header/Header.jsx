@@ -1,13 +1,17 @@
 // Importation des éléments dont on a besoin
 import React from 'react'
+// Création des liens avec React Router
 import { NavLink } from 'react-router-dom'
+// Importation image
 import Logo from '../../assets/images/logo.svg'
+// Design
 import './_Header.scss'
 
 // Création d'une fonction composant Header
 function Header() {
 
     return (
+
        <header className='header'>
         <NavLink to="/">
             <img src={Logo} alt="Logo de Kasa" className='header__image' />
@@ -22,6 +26,7 @@ function Header() {
                 </NavLink>
         </nav>
        </header>
+       
     )
 }
 

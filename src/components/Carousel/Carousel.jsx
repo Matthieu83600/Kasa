@@ -1,10 +1,14 @@
 // Importation des éléments dont on a besoin 
 import React from 'react'
+// Importation des hooks
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
+// Importation des données des locations 
 import DataLogements from '../../datas/logements.json'
+// Importation des images
 import ArrowLeft from '../../assets/images/ArrowLeft.png'
 import ArrowRight from '../../assets/images/ArrowRight.png'
+// Design
 import './_Carousel.scss'
 
 // Création d'une fonction composant Carousel
@@ -13,7 +17,7 @@ function Carousel() {
     const { id } = useParams()
     const location = DataLogements.find((location) => location.id === id)
 
-    // Utilisation du state pour afficher la première image
+    // Utilisation du state local pour afficher la première image
     const [slide, setSlide] = useState(0)
 
     // Création des fonctions permettant de faire défiler les images récupérées
@@ -26,6 +30,7 @@ function Carousel() {
     }
 
     return (
+        
         <section className='carousel'>
             <div className='carousel__container'>  
                 {location.pictures.map((picture, index) => (
@@ -53,6 +58,7 @@ function Carousel() {
                 </span>
             </div>
         </section>
+
     )
 }
 

@@ -1,13 +1,17 @@
 // Importation des éléments dont on a besoin 
 import React from 'react';
+// Création des routes avec React Router
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Logements from './pages/Logements/Logements'
-import About from './pages/About/About'
-import Error from './pages/Error/Error'
+// Importation des pages
+import Home from './pages/Home/Home.jsx';
+import Logements from './pages/Logements/Logements.jsx'
+import About from './pages/About/About.jsx'
+import Error from './pages/Error/Error.jsx'
+// Importation composants fonctions hedaer et footer sur toutes les pages
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
+// Design
 import './styles/_Global.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

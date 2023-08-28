@@ -1,12 +1,15 @@
 // Importation des éléments dont on a besoin 
 import React from 'react'
+// Importation des composants fonctions
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
+// Design
 import './_About.scss';
 
 // Création d'une fonction composant qui affiche la page About
 function About() {
     return (
+
         <main className='about'>
             {
                 // Récupération des composants Banner et Collapse
@@ -40,6 +43,7 @@ function About() {
             />
             </section>
         </main>
+        
     )
 }
 
