@@ -1,5 +1,11 @@
+@import '../../styles/Breakpoint.scss';
+
 .rating { align-items: flex-end;
           display: flex;
           gap: 4px;  
           margin-top: 10px;
+          @include mobile { img { height: 18px;
+                                  width: 18px;
+                                }
+                          }
         }

@@ -1,0 +1,22 @@
+// Tailles d'écran mobile
+$max-width-mobile: 767.99px;
+
+// Tailles d'écran tablette
+$min-width-tablet: 768px;
+$max-width-tablet: 1023.99px;
+
+// Media queries mobile
+@mixin mobile {
+    @media (max-width: #{$max-width-mobile})
+    {
+        @content;
+    }
+}
+
+// Media queries tablette
+@mixin tablet {
+    @media (min-width: #{$min-width-tablet}) and (max-width: #{$max-width-tablet})
+    {
+        @content;
+    }
+}
