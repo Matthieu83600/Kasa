@@ -12,9 +12,7 @@
                               grid-template-columns: repeat(2, 1fr);
                               justify-content: space-between;
                               width: 100%;
-                              @include mobile {display: flex;
-                                               flex-direction: column;                                                
-                                              }
+                              @include mobile {grid-template-columns: repeat(1, 1fr);}
                               &-informations {h2 {color: $main-color;
                                                   font-size: 36px;
                                                   @include mobile {font-size: 24px;
