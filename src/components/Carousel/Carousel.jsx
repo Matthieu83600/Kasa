@@ -29,7 +29,9 @@ function Carousel() {
         setSlide(slide === location.pictures.length - 1 ? 0 : slide + 1)
     }
 
-    return (
+    // S'il y a plus d'une image, on affiche les flèches de navigation et la numérotation
+    if (location.pictures.length > 1) {
+        return (
         
         <section className='carousel'>
             <div className='carousel__container'>  
@@ -60,6 +62,24 @@ function Carousel() {
         </section>
 
     )
+    // Sinon les flèches de navigation et la numérotation n'apparaissent pas 
+    } else {
+        return (
+            <section className='carousel'>
+                <div className='carousel__container'>  
+                    {location.pictures.map((picture, index) => (
+                        <img 
+                            src={picture}
+                            alt={location.title}
+                            key={index}
+                            className={slide === index ? "carousel__container-slide" : "carousel__container-slidehidden"}
+                        />    
+                    ))}
+                </div>    
+            </section>
+        )
+    }
+    
 }
 
 export default Carousel 
