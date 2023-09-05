@@ -10,7 +10,6 @@
                                 }
                 &__container {display: grid;
                               grid-template-columns: repeat(2, 1fr);
-                              justify-content: space-between;
                               width: 100%;
                               @include mobile {grid-template-columns: repeat(1, 1fr);}
                               &-informations {h2 {color: $main-color;
@@ -38,9 +37,8 @@
                                                       }
                                       .host-id {align-items: center;
                                                 display: flex;
-                                                gap: 40px; 
-                                                margin-right: -50px;
-                                                @include mobile {margin-right: -30px;}
+                                                justify-content: flex-end;
+                                                gap: 50px; 
                                                 p {color: $main-color;
                                                    font-size: 18px;
                                                    width: 30%;
@@ -50,8 +48,8 @@
                                                                    }
                                                   }
                                                 img {border-radius: 33px;
-                                                     max-height: 74px;
-                                                     max-width: 74px;
+                                                     height: 64px;
+                                                     width: 64px;
                                                      @include mobile {height: 32px;
                                                                       width: 32px;
                                                                      }
